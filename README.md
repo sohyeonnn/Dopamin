@@ -5,7 +5,7 @@
 ## PSVM팀 소개
 |김효은|문창무|이동훈|전소현|정은비|
 |---|---|---|---|---|
-|[GitHub](https://github.com/hyoeun0101)|[GitHub](https://github.com/ChangmooMoon)|[GitHub](https://github.com/LeeHoonDong)|[GitHub](https://github.com/sohyeonnn)|[GitHub](https://github.com/orgs/PSVM2022/people/ombuu)|
+|[GitHub](https://github.com/hyoeun0101)|[GitHub](https://github.com/ChangmooMoon)|[GitHub](https://github.com/LeeHoonDong)|[GitHub](https://github.com/sohyeonnn)|[GitHub](https://github.com/ombuu)|
 - 팀노션: [PSVM팀 프로젝트 노션](https://pattern-mink-364.notion.site/OTT-3d17c00593ae4b868155952958b7da3f)
 
 ## 프로젝트 소개
