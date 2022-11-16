@@ -1,6 +1,7 @@
 # OTT 컨텐츠 통합 검색 포털 사이트, 도파민
 <img width="90%" src="https://user-images.githubusercontent.com/74013080/199785708-99a10e1d-5b34-4cdb-b335-bdff7d713969.png"/>
-
+<img width="60%" src="https://user-images.githubusercontent.com/96059261/198674092-b835d556-1141-46d9-b66e-3ec08f0c8313.gif"/>
+<img width="60%" src="https://user-images.githubusercontent.com/96059261/198678280-0ddc61dc-a9e6-413b-a074-2be429a43c13.gif"/>
 
 ## PSVM팀 소개
 |김효은|문창무|이동훈|전소현|정은비|
