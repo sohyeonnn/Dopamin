@@ -1,7 +1,8 @@
 package com.PSVM.dopamin.dao;
 
-import com.PSVM.dopamin.domain.User.UserDto;
-import com.PSVM.dopamin.service.User.UserService;
+import com.PSVM.dopamin.dao.user.UserDao;
+import com.PSVM.dopamin.domain.user.UserDto;
+import com.PSVM.dopamin.service.user.UserService;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

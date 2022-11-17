@@ -1,20 +1,14 @@
 package com.PSVM.dopamin.dao;
 
-import com.PSVM.dopamin.domain.CntsEvalDto;
-import com.PSVM.dopamin.domain.ContentsDto;
-import com.PSVM.dopamin.domain.SearchCondition;
+import com.PSVM.dopamin.dao.contents.ContentsDao;
+import com.PSVM.dopamin.domain.contents.ContentsDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
-import org.springframework.test.context.web.WebAppConfiguration;
-import org.springframework.ui.Model;
 
-import java.util.Collections;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 import static org.junit.Assert.*;
 

@@ -1,13 +1,13 @@
 package com.PSVM.dopamin.dao;
 
-import com.PSVM.dopamin.domain.ReviewDto;
+import com.PSVM.dopamin.dao.contents.ReviewDao;
+import com.PSVM.dopamin.domain.contents.ReviewDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
-import java.sql.Timestamp;
 import java.util.List;
 
 import static org.junit.Assert.*;

@@ -1,6 +1,7 @@
 package com.PSVM.dopamin.service;
 
-import com.PSVM.dopamin.domain.ContentsWishDto;
+import com.PSVM.dopamin.domain.contents.ContentsWishDto;
+import com.PSVM.dopamin.service.contents.ContentsService;
 import junit.framework.TestCase;
 import org.junit.Test;
 import org.junit.runner.RunWith;

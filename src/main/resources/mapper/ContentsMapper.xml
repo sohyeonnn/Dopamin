@@ -6,14 +6,14 @@
     <!-- parameterType="int" ; java.lang.Integer의 alias타입, mybatis내부적으로 적용됨 전체보기에서 resultType="map" 아님, parameterType=int없어도 됨 -->
 
     <!--컨텐츠 전체 읽어오기-->
-    <select id="selectAllCnts"  resultType="com.PSVM.dopamin.domain.ContentsDto">
+    <select id="selectAllCnts"  resultType="com.PSVM.dopamin.domain.contents.ContentsDto">
         select *
         from CNTS
         where cnts_visib_stat = 1
     </select>
 
     <!--컨텐츠 상세 조회 읽어오기-->
-    <select id="selectCnts" parameterType="int" resultType="com.PSVM.dopamin.domain.ContentsDto">
+    <select id="selectCnts" parameterType="int" resultType="com.PSVM.dopamin.domain.contents.ContentsDto">
         select *
         from CNTS
         where cnts_id = #{cnts_id} and cnts_visib_stat = 1
@@ -26,7 +26,7 @@
     </update>
 
     <!--컨텐츠 검색(옵션3개)-->
-    <select id="searchSelectCnts" parameterType="SearchCondition" resultType="com.PSVM.dopamin.domain.ContentsDto">
+    <select id="searchSelectCnts" parameterType="SearchCondition" resultType="com.PSVM.dopamin.domain.contents.ContentsDto">
         select * from CNTS
         where cnts_visib_stat = 1
           <choose>
@@ -109,7 +109,7 @@
 
     <!--컨텐츠 찜-->
     <!--찜-->
-    <insert id="insertWish" parameterType="com.PSVM.dopamin.domain.ContentsWishDto">
+    <insert id="insertWish" parameterType="com.PSVM.dopamin.domain.contents.ContentsWishDto">
         insert INTO CNTS_WISH
             (cnts_id, user_id, in_date, in_user, up_date, up_user)
         values (#{cnts_id}, #{user_id}, now(), #{user_id}, now(), #{user_id})
@@ -121,7 +121,7 @@
     </delete>
 
     <!--찜 기록 확인-->
-    <select id="wish" parameterType="map" resultType="com.PSVM.dopamin.domain.ContentsWishDto">
+    <select id="wish" parameterType="map" resultType="com.PSVM.dopamin.domain.contents.ContentsWishDto">
         select *
         from CNTS_WISH
         where cnts_id = #{cnts_id}
@@ -171,7 +171,7 @@
     </delete>
 
     <!--유저별 추천 컨텐츠-->
-    <select id="selectUserAllCnts" resultType="com.PSVM.dopamin.domain.ContentsUserDto">
+    <select id="selectUserAllCnts" resultType="com.PSVM.dopamin.domain.contents.ContentsUserDto">
         select u.user_id, u.nic, u.fav_genre1, c.cnts_id, c.cnts_title, c.cnts_subttl, c.cnts_postr_img, c.cnts_op_date, c.cnts_genre1, c.cnts_genre2, c.cnts_genre3, c.cnts_genre4, c.cnts_genre5, c.cnts_cnty
         from CNTS c
                  join USER u on c.cnts_genre1 = u.fav_genre1
@@ -183,7 +183,7 @@
           and u.user_id = #{user_id}
     </select>
 
-    <select id="selectUserId" parameterType="string" resultType="com.PSVM.dopamin.domain.ContentsUserDto">
+    <select id="selectUserId" parameterType="string" resultType="com.PSVM.dopamin.domain.contents.ContentsUserDto">
         select u.nic
         from CNTS c
                  join USER u on c.cnts_genre1 = u.fav_genre1

@@ -5,8 +5,8 @@ import static org.junit.Assert.assertNotEquals;
 import static org.junit.Assert.assertNotNull;
 import static org.junit.Assert.assertNull;
 
-import com.PSVM.dopamin.dao.UserDao;
-import com.PSVM.dopamin.domain.User.UserDto;
+import com.PSVM.dopamin.dao.user.UserDao;
+import com.PSVM.dopamin.domain.user.UserDto;
 import com.PSVM.dopamin.domain.community.PostDto;
 import java.sql.SQLException;
 import java.util.HashMap;

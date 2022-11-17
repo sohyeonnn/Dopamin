@@ -1,8 +1,8 @@
 package com.PSVM.dopamin.dao;
 
-import com.PSVM.dopamin.dao.Item.ItemAdminDaoImpl;
-import com.PSVM.dopamin.domain.Item.ItemDto;
-import com.PSVM.dopamin.domain.Item.Pymt_DetlDto;
+import com.PSVM.dopamin.dao.item.ItemAdminDaoImpl;
+import com.PSVM.dopamin.domain.item.ItemDto;
+import com.PSVM.dopamin.domain.item.Pymt_DetlDto;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -11,7 +11,6 @@ import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 import org.springframework.test.context.web.WebAppConfiguration;
 import org.springframework.transaction.annotation.Transactional;
 
-import java.math.BigDecimal;
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.List;

@@ -6,7 +6,7 @@
 
     <!--한줄평 상세(전체 읽기) 페이지 페이징 해야함-->
     <!--한줄평 전체 읽어오기-->
-    <select id="selectAllRevw" parameterType="int" resultType="com.PSVM.dopamin.domain.ReviewDto">
+    <select id="selectAllRevw" parameterType="int" resultType="com.PSVM.dopamin.domain.contents.ReviewDto">
         select revw_id, cnts_id, user_id, revw_body, in_date
         from REVW
         where revw_visib_stat = 1 and cnts_id = #{cnts_id}
@@ -14,7 +14,7 @@
     </select>
 
     <!--한줄평 1개 조회 읽어오기(필요한가?)-->
-    <select id="selectRevw" parameterType="int" resultType="com.PSVM.dopamin.domain.ReviewDto">
+    <select id="selectRevw" parameterType="int" resultType="com.PSVM.dopamin.domain.contents.ReviewDto">
         SELECT *
         FROM revw
         WHERE revw_id = #{revw_id}
@@ -27,7 +27,7 @@
     </select>
 
     <!--한줄평 작성-->
-    <insert id="insertRevw" parameterType="com.PSVM.dopamin.domain.ReviewDto">
+    <insert id="insertRevw" parameterType="com.PSVM.dopamin.domain.contents.ReviewDto">
         insert into REVW
             (user_id, cnts_id, revw_body,in_user, in_date,up_user)
         values
@@ -35,7 +35,7 @@
     </insert>
 
     <!--한줄평 수정-->
-    <update id="updateRevw" parameterType="com.PSVM.dopamin.domain.ReviewDto">
+    <update id="updateRevw" parameterType="com.PSVM.dopamin.domain.contents.ReviewDto">
         UPDATE REVW
         SET revw_body = #{revw_body}
         WHERE revw_id = #{revw_id} and user_id = #{user_id}

@@ -1,9 +1,9 @@
 package com.PSVM.dopamin.dao;
 
-import com.PSVM.dopamin.dao.Item.ItemUserDaoImpl;
-import com.PSVM.dopamin.domain.Item.Cart_ItemDto;
-import com.PSVM.dopamin.domain.Item.ItemDto;
-import com.PSVM.dopamin.domain.Item.OrderDto;
+import com.PSVM.dopamin.dao.item.ItemUserDaoImpl;
+import com.PSVM.dopamin.domain.item.Cart_ItemDto;
+import com.PSVM.dopamin.domain.item.ItemDto;
+import com.PSVM.dopamin.domain.item.OrderDto;
 import com.PSVM.dopamin.error.Message;
 import org.junit.Test;
 import org.junit.runner.RunWith;
